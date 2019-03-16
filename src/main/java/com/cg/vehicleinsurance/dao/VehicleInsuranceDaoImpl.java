@@ -44,7 +44,7 @@ public class VehicleInsuranceDaoImpl implements VehicleInsuranceDao{
 	public long calculateNoOfDaysLeft(Date registerDate, Date renewalDate) {
 		long noOfDays=0;
 		
-		long diff=renewalDate.getTime()-registerDate.getTime();
+		long diff=renewalDate.getTime() - registerDate.getTime();
 		noOfDays=(diff/(1000*60*60*24));
 		
 		return noOfDays;
